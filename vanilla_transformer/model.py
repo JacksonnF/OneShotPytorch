@@ -181,16 +181,16 @@ def create_mask(size):
     mask = torch.triu(torch.ones(size, size), diagonal=1)
     return mask
 
-# if __name__ == "__main__":
-#     torch.random.manual_seed(42)
+if __name__ == "__main__":
+    torch.random.manual_seed(42)
 
-#     args = ModelArgs()
-#     model = Transformer(args)
+    args = ModelArgs()
+    model = Transformer(args)
 
-#     input = torch.randint(-1, 1, size=(64, 5, args.embed_size))
-#     output = torch.randint(-1, 1, size=(64, 1, args.embed_size))
-#     print("input: ", input, " Output: ", output)
+    input = torch.randint(-1, 1, size=(64, 5, args.embed_size))
+    output = torch.randint(-1, 1, size=(64, 1, args.embed_size))
+    print("input: ", input, " Output: ", output)
 
-#     pred = model(input, output)
-#     print("\nPrediction: ", pred, "\n\nPrediction Size: ", pred.size())
+    pred = model(input, output)
+    print("\nPrediction: ", pred, "\n\nPrediction Size: ", pred.size())
 

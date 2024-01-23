@@ -1,3 +1,3 @@
 # OneShotPytorch
 
-One-file implementations of some common ML models.
+One-file Pytorch (and sometimes mlx) implementations of some common ML models.
